@@ -1,6 +1,6 @@
 from threading import Thread
-from database import Database
-from gSheet import GSheet
+from src.gSheet import GSheet
 
-gsheet = GSheet()
-new_thread = Thread(target=gsheet.update).start()
+def activate_tread():
+    gsheet = GSheet()
+    new_thread = Thread(target=gsheet.update).start()

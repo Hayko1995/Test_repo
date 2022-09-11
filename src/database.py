@@ -1,7 +1,7 @@
 from sqlite3 import connect
 import psycopg2
 from psycopg2 import sql
-from get_carrency import get_carency
+from src.get_carrency import get_carency
 
 
 class Database():
