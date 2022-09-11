@@ -1,0 +1,5 @@
+# config postgress 
+link - https://phoenixnap.com/kb/postgres-create-user
+
+# make user superuser 
+ALTER USER myuser WITH SUPERUSER;
