@@ -53,7 +53,8 @@ class Database():
         self.cursor.execute("""select * from test""")
         tests = self.cursor.fetchall()
         self.disconnect()
-        return tests
+        headers = [i[0] for i in self.cursor.description]
+        return headers, tests
 
     def drop_table(self):
         self.connect()

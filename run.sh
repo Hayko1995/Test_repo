@@ -1,0 +1,1 @@
+python3 beckend/manage.py runserver --noreload & cd front &&  npm start

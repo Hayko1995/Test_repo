@@ -48,7 +48,7 @@ class GSheet(Database):
         while(1):
             result = self.get_from_gsheet()
             head = result.pop(0)
-            db_res = self.get_from_database()
+            _, db_res = self.get_from_database()
             db_res = list(map(list, [x[:-1] for x in db_res]))
             if not result == db_res:
                 self.drop_table()

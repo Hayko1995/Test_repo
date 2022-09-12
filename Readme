@@ -3,3 +3,7 @@ link - https://phoenixnap.com/kb/postgres-create-user
 
 # make user superuser 
 ALTER USER myuser WITH SUPERUSER;
+
+
+# RUN server 
+python manage.py runserver --noreload
